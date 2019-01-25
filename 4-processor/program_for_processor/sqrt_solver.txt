@@ -1,0 +1,51 @@
+in
+in
+in
+
+pop rcx
+pop rbx
+pop rax
+
+push rbx
+push rbx
+mul
+pop [0]
+
+push rax
+push rcx
+push 4
+mul
+mul
+pop [1]
+
+
+push [0]
+push [1]
+sub
+sqrt
+pop [5]
+
+push rax
+push 2
+mul
+pop [3]
+
+push -1
+push rbx
+mul
+pop [4]
+
+push [4]
+push [5]
+sub
+push [3]
+div
+out
+
+push [4]
+push [5]
+add
+push [3]
+div
+out
+end
